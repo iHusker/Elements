@@ -23,7 +23,7 @@ public class WarpManager {
         JsonStorage.write(plugin, "data/warps", warps);
     }
 
-    public void add(String name, Location location) {
+    public void set(String name, Location location) {
         warps.put(name, new LocationData(location));
     }
 

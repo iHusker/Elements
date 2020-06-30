@@ -12,8 +12,8 @@ public class WarpsCommand extends AbstractCommand implements Command {
 
     private final WarpManager warpManager;
 
-    protected WarpsCommand(WarpManager warpManager) {
-        super("warp");
+    public WarpsCommand(WarpManager warpManager) {
+        super("warps");
         this.warpManager = warpManager;
     }
 
