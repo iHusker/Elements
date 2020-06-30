@@ -16,7 +16,7 @@ public class JsonStorage {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     public static void write(Plugin plugin, String fileName, Object object) {
-        Path path = Paths.get(plugin.getDataFolder() + "/" + fileName);
+        Path path = Paths.get(plugin.getDataFolder() + "/" + fileName + ".json");
         try {
             if(!Files.exists(path)) {
                 Files.createDirectories(path.getParent());
@@ -34,7 +34,7 @@ public class JsonStorage {
     }
 
     public static <C> C read(Plugin plugin, String fileName, Type type) {
-        Path path = Paths.get(plugin.getDataFolder() + "/" + fileName);
+        Path path = Paths.get(plugin.getDataFolder() + "/" + fileName + ".json");
         boolean resources = false;
         try {
             if (!Files.exists(path)) {

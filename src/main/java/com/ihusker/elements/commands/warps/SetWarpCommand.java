@@ -1,4 +1,4 @@
-package com.ihusker.elements.commands;
+package com.ihusker.elements.commands.warps;
 
 import com.ihusker.elements.managers.WarpManager;
 import com.ihusker.elements.utilities.command.AbstractCommand;

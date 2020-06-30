@@ -1,5 +1,6 @@
-package com.ihusker.elements.data;
+package com.ihusker.elements.data.location;
 
+import com.ihusker.elements.data.location.BlockData;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 

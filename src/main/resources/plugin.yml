@@ -1,16 +1,24 @@
 name: Elements
 main: com.ihusker.elements.Elements
-version: 0.0.2
+version: 0.0.3
 api-version: "1.16"
 author: iHusker
 authors: [iHusker]
 
 commands:
+  delkit:
+    description: Remove an existing kit.
   delwarp:
     description: Remove an existing warp.
+  kit:
+    description: Select a certain kit,
+  kits:
+    description: Dispays a list of kits.
+  setkit:
+    description: Set a new or existing kit.
   setwarp:
     description: Set a new or existing warp.
   warp:
     description: Warp to a target location.
   warps:
-    description: Displayes a lit of warps.
+    description: Displayes a list of warps.

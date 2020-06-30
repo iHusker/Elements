@@ -1,4 +1,4 @@
-package com.ihusker.elements.data;
+package com.ihusker.elements.data.location;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;

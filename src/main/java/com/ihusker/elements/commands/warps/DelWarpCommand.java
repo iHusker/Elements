@@ -1,4 +1,4 @@
-package com.ihusker.elements.commands;
+package com.ihusker.elements.commands.warps;
 
 import com.ihusker.elements.managers.WarpManager;
 import com.ihusker.elements.utilities.command.AbstractCommand;
@@ -6,12 +6,12 @@ import com.ihusker.elements.utilities.command.Command;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-public class WarpCommand extends AbstractCommand implements Command {
+public class DelWarpCommand extends AbstractCommand implements Command {
 
     private final WarpManager warpManager;
 
-    public WarpCommand(WarpManager warpManager) {
-        super("warp");
+    public DelWarpCommand(WarpManager warpManager) {
+        super("delwarp");
         this.warpManager = warpManager;
     }
 
@@ -21,8 +21,8 @@ public class WarpCommand extends AbstractCommand implements Command {
         if(location == null) {
             player.sendMessage("The warp " + args[0] + " does not seem to exist.");
         } else {
-            player.teleport(location);
-            player.sendMessage("You have been teleported to " + args[0]);
+            warpManager.remove(args[0]);
+            player.sendMessage("You have removed the " + args[0] + " warp.");
         }
     }
 }
