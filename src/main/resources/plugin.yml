@@ -1,0 +1,12 @@
+name: Elements
+main: com.ihusker.elements.Elements
+version: 0.0.1
+api-version: "1.16"
+author: iHusker
+authors: [iHusker]
+
+commands:
+  warp:
+    description: Warp to a target location.
+  warps:
+    description: Displayes a lit of warps.
